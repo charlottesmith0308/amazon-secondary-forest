@@ -20,12 +20,15 @@ For each pixel scripts also calculate:
 
 ### Required Packages
 Packages were managed using Anaconda and were installed with conda or conda-forge.
-- gdal
+
 - cv2
-- numpy
-- pandas
-- os
+- gdal
 - glob
+- numpy
+- os
+- pandas
+- sys
+
 
 ### Running Scripts
 1. Upload raw mapbiomas data using winscp or equivalent
