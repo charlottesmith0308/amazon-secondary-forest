@@ -1,0 +1,17 @@
+#$ -S /bin/bash
+#$ -q serial
+#$ -N Change_D
+#$ -l h_vmem=25G
+#$ -t 1-16:1
+#$ -hold_jid split
+
+source /etc/profile
+
+module load anaconda3/2018.12
+
+
+
+chmod +x change_detection/change_detection.py
+
+python3.7 change_detection/change_detection.py
+
