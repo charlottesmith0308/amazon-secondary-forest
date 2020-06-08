@@ -1,0 +1,19 @@
+#$ -S /bin/bash
+
+#$ -N split
+
+#$ -q serial
+#$ -l h_vmem=10G
+#$ -t 1985-2017:1
+
+
+
+source /etc/profile
+
+module load anaconda3/2018.12
+
+
+
+chmod +x data_wrangling/split_big_arrays.py
+
+python3.7 data_wrangling/split_big_arrays.py
